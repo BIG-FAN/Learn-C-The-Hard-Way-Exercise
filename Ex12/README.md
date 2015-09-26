@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
 
     if (argc == 1) {
         printf("You only have one argument. You suck.\n");
-    } else if (argc & 1) {
+    } else if ((argc - 1) & 1) {
         printf("Here's your odd arguments:\n");
 
         for (i = 0; i < argc; i++) {
